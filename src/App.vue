@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="background-app">
     <Navigation></Navigation>
     <router-view/>
   </div>
@@ -10,11 +10,15 @@ import Navigation from "@/components/Navigation";
 export default {
   name: 'App',
   components: {
-    'Navigation': Navigation
+    'Navigation': Navigation,
+    'Navgate' : Navigation
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+@import '@/assets/scss/style.scss';
+.background-app{
+    background-color: $gris-color;
+}
 </style>
