@@ -1,1 +1,25 @@
-@import './_variables'
+@import './_variables';
+
+.btn-success{
+    background-color: $verde-color;
+    border-color: $verde-color;
+    &:hover {
+        background-color: $verde-oscuro-color;
+    }
+}
+
+.btn-warning{
+    background-color: $amarillo-color;
+    border-color: $amarillo-color;
+    &:hover {
+        background-color: $amarillo-oscuro-color;
+    }
+}
+
+.active ul li a .page-link{
+    background-color: $verde-color !important;
+    border-color: $verde-color !important;
+    &:hover {
+        background-color: $verde-oscuro-color;
+    }
+}

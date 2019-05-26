@@ -11,8 +11,8 @@
                     <label for="job">Trabajo</label>
                     <input type="text" v-model="form.job" id="job" class="form-control">
                 </div>
-                <button type="submit" class="btn btn-primary">Guardar</button>
-                <button type="reset" class="btn btn-secundary">Limpiar</button>
+                <button type="submit" class="btn btn-success">Guardar</button>
+                <button type="button" @click.prevent="clear" class="btn btn-secondary">Limpiar</button>
             </form>
         </div>
     </div>
@@ -32,13 +32,15 @@ export default {
     }
   },
   methods: {
+      clear: function () {
+        this.form.name = this.form.job = "";  
+      },
       submitted: function(){
           axios.post('https://reqres.in/api/users', {
               name: this.form.name,
               job: this.form.job,
           })
           .then(function (response) {
-              console.log(response);
               Swal.fire({
                   type: 'success',
                   title: 'Exito!',
@@ -48,8 +50,9 @@ export default {
                   <li>Trabajo: ${response.data.job}</li>
                   <li>Fecha creado: ${response.data.createdAt}</li>
                   </ul>`
-              })
-              this.form.job = this.form.name = '';
+              });
+              document.getElementById('name').value = ""
+              document.getElementById('job').value = ""
           }) 
           .catch(function(error){
               Swal.fire({
@@ -64,7 +67,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="sass" scoped>
-
+<style lang="scss" scoped>
+@import '@/assets/scss/style.scss';
 </style>
 

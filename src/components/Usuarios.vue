@@ -8,7 +8,7 @@
         <div class="col-md-6 mt-4">
           <app-form-update/>
         </div>
-        <div class="col-md-12 mt-4">
+        <div class="col-md-12 mt-4 mb-4">
           <app-table/>
         </div>
       </div>
@@ -37,19 +37,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1,
-h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
