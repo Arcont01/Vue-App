@@ -40,7 +40,7 @@ export default {
               name: this.form.name,
               job: this.form.job,
           })
-          .then(function (response) {
+          .then(response => {
               Swal.fire({
                   type: 'success',
                   title: 'Exito!',
@@ -54,7 +54,7 @@ export default {
               document.getElementById('name').value = ""
               document.getElementById('job').value = ""
           }) 
-          .catch(function(error){
+          .catch(error => {
               Swal.fire({
                   type: 'error',
                   title: 'Error!',

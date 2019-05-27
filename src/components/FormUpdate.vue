@@ -47,17 +47,17 @@ export default {
   mounted() {
     axios
       .get("https://reqres.in/api/user/2")
-      .then(function(response) {
-        document.getElementById("nameUpd").value = `${response.data.data.name}`;
-        document.getElementById("jobUpd").value = `zion resident`;
+      .then(response => {
+        this.formUpd.name = response.data.data.name;
+        this.formUpd.job = `zion resident`;
       })
-      .catch(function(error) {
+      .catch(error => {
         console.log("error");
       });
   },
   methods: {
     clear: function () {
-        this.form.name = this.form.job = "";  
+        this.formUpd.name = this.formUpd.job = "";  
     },
     changeDisable: function(){
         if(document.getElementById("fieldset").disabled){
@@ -72,8 +72,9 @@ export default {
           name: this.formUpd.name,
           job: this.formUpd.job
         })
-        .then(function(response) {
-          console.log(response);
+        .then(response => {
+          this.formUpd.name = response.data.name;
+          this.formUpd.job = response.data.job;
           Swal.fire({
             type: "success",
             title: "Exito!",

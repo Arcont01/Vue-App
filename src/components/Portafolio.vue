@@ -1,5 +1,5 @@
 <template>
-  <div id="Portafolio">
+  <div>
     <div class="container-fluid">
       <div class="d-flex justify-content-center my-3">
         <div class="btn-group" role="group" aria-label="Basic example">
@@ -25,7 +25,7 @@
       </div>
       <div class="d-flex flex-row flex-wrap justify-content-center">
         <div class="d-flex flex-column">
-          <div v-for="(image, index) in images1" :key="image" :class="image.class">
+          <div v-for="(image, index) in images1" :key="image.id" :class="image.class">
             <a
               :data-src="image.src"
               href="#modal"
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="d-flex flex-column">
-          <div v-for="image in images2" :key="image" :class="image.class">
+          <div v-for="(image, index) in images2" :key="image.id" :class="image.class">
             <a
               :data-src="image.src"
               href="#modal"
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="d-flex flex-column">
-          <div v-for="image in images3" :key="image" :class="image.class">
+          <div v-for="(image, index) in images3" :key="image.id" :class="image.class">
             <a
               :data-src="image.src"
               href="#modal"
@@ -113,21 +113,25 @@ export default {
       msg: "Portafolio",
       images1: [
         {
+          id: 1,
           src:
             "https://image.shutterstock.com/image-photo/urban-geometry-looking-glass-building-450w-334910669.jpg",
           class: "construccion"
         },
         {
+          id: 2,
           src:
             "https://image.shutterstock.com/image-photo/architecture-show-her-model-simulate-450w-423528364.jpg",
           class: "disenio"
         },
         {
+          id: 3,
           src:
             "https://image.shutterstock.com/image-illustration/hand-drafting-design-villa-building-450w-497743579.jpg",
           class: "disenio"
         },
         {
+          id: 4,
           src:
             "https://image.shutterstock.com/image-photo/beautiful-retro-luxury-light-lamp-450w-279671069.jpg",
           class: "construccion"
@@ -135,21 +139,25 @@ export default {
       ],
       images2: [
         {
+          id: 1,
           src:
             "https://image.shutterstock.com/image-illustration/abstract-sketch-design-interior-kitchen-450w-353998463.jpg",
           class: "disenio"
         },
         {
+          id: 2,
           src:
             "https://image.shutterstock.com/image-photo/italy-sicily-ragusa-province-countryside-450w-1340545043.jpg",
           class: "construccion"
         },
         {
+          id: 3,
           src:
             "https://image.shutterstock.com/image-photo/projecting-pencil-on-big-urban-450w-241266958.jpg",
           class: "disenio"
         },
         {
+          id: 4,
           src:
             "https://image.shutterstock.com/image-photo/architect-man-working-blueprintsengineer-inspection-450w-751974061.jpg",
           class: "disenio"
@@ -157,21 +165,25 @@ export default {
       ],
       images3: [
         {
+          id: 1,
           src:
             "https://image.shutterstock.com/image-photo/close-engineer-hands-discussing-building-450w-657900391.jpg",
           class: "disenio"
         },
         {
+          id: 2,
           src:
             "https://image.shutterstock.com/image-photo/modern-office-building-facade-glass-450w-221616010.jpg",
           class: "construccion"
         },
         {
+          id: 3,
           src:
             "https://image.shutterstock.com/image-photo/abstract-modern-architecture-high-contrast-450w-568015594.jpg",
           class: "construccion"
         },
         {
+          id: 4,
           src:
             "https://image.shutterstock.com/image-vector/architecture-blueprint-backgroundpaper-art-style-450w-1147015811.jpg",
           class: "disenio"
