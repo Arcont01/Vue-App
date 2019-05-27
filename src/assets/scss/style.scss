@@ -1,5 +1,6 @@
 @import './_variables';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap';
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 p,
 h1,
@@ -9,8 +10,11 @@ h4,
 h5,
 h6,
 a,
+td,
+th,
+label,
 button{
-    font-family: 'Roboto Slab', serif;
+  font-family: 'Courgette', cursive;
 }
 
 .btn-success {
@@ -37,5 +41,32 @@ button{
 
   &:hover {
     background-color: $verde-oscuro-color;
+  }
+}
+
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: #3b5998;
+  &:hover{
+    background-color: #324A80;
+  }
+}
+
+.btn-twitter {
+  color: #fff;
+  background-color: #5DA9DD;
+  border-color: #5DA9DD;
+  &:hover{
+    background-color: #366280;
+  }
+}
+
+.btn-insta {
+  color: #fff;
+  background-color: #DC306E;
+  border-color: #DC306E;
+  &:hover{
+    background-color: #801C41;
   }
 }
