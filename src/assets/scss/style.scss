@@ -1,1 +1,41 @@
-@import './_variables'
+@import './_variables';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap';
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button{
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn-success {
+  background-color: $verde-color;
+  border-color: $verde-color;
+
+  &:hover {
+    background-color: $verde-oscuro-color;
+  }
+}
+
+.btn-warning {
+  background-color: $amarillo-color;
+  border-color: $amarillo-color;
+
+  &:hover {
+    background-color: $amarillo-oscuro-color;
+  }
+}
+
+.active ul li a .page-link {
+  background-color: $verde-color !important;
+  border-color: $verde-color !important;
+
+  &:hover {
+    background-color: $verde-oscuro-color;
+  }
+}
