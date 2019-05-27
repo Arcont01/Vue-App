@@ -8,6 +8,11 @@
             <div class="card-body">
               <h5 class="card-title text-center title-color">{{post.title}}</h5>
               <p class="card-text">{{post.descriptions}}</p>
+              <div class="d-flex justify-content-center my-2">
+                <button class="btn btn-fb mx-1" type="button"><i class="fab fa-facebook-f fa-lg"></i></button>
+                <button class="btn btn-twitter mx-1" type="button"><i class="fab fa-twitter fa-lg"></i></button>
+                <button class="btn btn-insta mx-1" type="button"><i class="fab fa-instagram fa-lg"></i></button>
+              </div>
               <a
                 href="#comments"
                 :id="post.id"
