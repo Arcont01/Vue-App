@@ -1,10 +1,10 @@
 <template>
   <div id="Home">
     <div class="comtainer-fluid">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselId" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselId" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -28,7 +28,7 @@
         </div>
         <a
           class="carousel-control-prev"
-          href="#carouselExampleIndicators"
+          href="#carouselId"
           role="button"
           data-slide="prev"
         >
@@ -37,7 +37,7 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#carouselExampleIndicators"
+          href="#carouselId"
           role="button"
           data-slide="next"
         >
@@ -46,13 +46,12 @@
         </a>
       </div>
       <div class="row my-3">
-        <div
-          class="col-md-8"
-        >
-        <h2>Diseño de construccion</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
-          <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
-        </p>
+        <div class="col-md-8">
+          <h2>Diseño de construccion</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
+          </p>
         </div>
         <div class="col-md-4">
           <a
@@ -82,13 +81,12 @@
             >
           </a>
         </div>
-        <div
-          class="col-md-8"
-        >
-        <h2>Construccion Moderna</h2>
-        <p><i class="fab fa-facebook-f"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
-          <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
-        </p>
+        <div class="col-md-8">
+          <h2>Construccion Moderna</h2>
+          <p>
+            <i class="fab fa-facebook-f"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
+          </p>
         </div>
       </div>
     </div>
@@ -122,6 +120,11 @@ export default {
   name: "Home",
   data() {
     return {};
+  },
+  mounted() {
+    $(".carousel").carousel({
+      interval: 2000
+    });
   },
   methods: {
     seeModal: function() {
