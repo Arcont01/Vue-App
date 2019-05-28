@@ -8,7 +8,7 @@
 ## Opciones para lanzar
 
 ``` bash
-1. descarga o clona el proyecto de [GitHub](https://github.com/Arcont01/prueba)
+1. descarga o clona el proyecto desde (https://github.com/Arcont01/prueba)
 2. cd ./prueba
 3. 
     # instalar dependencias
