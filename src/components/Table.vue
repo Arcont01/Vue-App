@@ -20,7 +20,9 @@ export default {
     $(document).ready(function($) {
       this.dataTable = $("#table-users").DataTable({
         responsive: true,
-        scrollY: '50vh',
+        processing: true,
+        scrollX: true,
+        scrollY: '200',
         dom:
           "<'row'<'col-sm-12 col-md-6'f>>" +
           "<'row'<'col-sm-12'tr>>" +
