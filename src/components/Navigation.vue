@@ -1,6 +1,6 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <router-link class="navbar-brand" to="/"><strong>App</strong></router-link>
+  <router-link class="navbar-brand" to="/"><strong>Arquitectura</strong></router-link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,8 +37,13 @@ export default {
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
     &:hover{
       color: rgba(255, 255, 255, 0.8);
     }
+}
+
+.navbar-dark .navbar-brand{
+  font-family: 'Poppins', sans-serif;
 }
 </style>

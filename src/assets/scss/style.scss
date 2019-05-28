@@ -1,6 +1,7 @@
 @import './_variables';
 @import '@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 
 p,
 h1,
@@ -9,11 +10,10 @@ h3,
 h4,
 h5,
 h6,
-a,
 td,
 th,
-label,
-button{
+label{
+  color: $negro-color;
   font-family: 'Courgette', cursive;
 }
 
@@ -69,4 +69,8 @@ button{
   &:hover{
     background-color: #801C41;
   }
+}
+
+.border-primary{
+  border-color: $morado-color !important;
 }

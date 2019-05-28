@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card border-primary">
     <div class="card-body">
       <h5 class="card-title"></h5>
       <table id="table-users" class="table table-striped table-bordered" style="width:100%"></table>
@@ -17,9 +17,10 @@ export default {
     };
   },
   mounted: function() {
-    this.dataTable = $(document).ready(function($) {
+    $(document).ready(function($) {
       this.dataTable = $("#table-users").DataTable({
         responsive: true,
+        scrollY: '50vh',
         dom:
           "<'row'<'col-sm-12 col-md-6'f>>" +
           "<'row'<'col-sm-12'tr>>" +
@@ -73,13 +74,7 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-@import '@/assets/scss/style.scss';
-page-item.active .page-link {
-    z-index: 1;
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
+<style lang="scss" scoped>
+@import "@/assets/scss/style.scss";
 </style>
 
