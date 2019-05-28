@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="card-columns my-3 mx-3">
-          <div class="card" v-for="post in posts" :key="post.id">
+          <div class="card border-primary" v-for="post in posts" :key="post.id">
             <img class="card-img-top" :src="post.url" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title text-center title-color">{{post.title}}</h5>

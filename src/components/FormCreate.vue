@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card border-primary">
         <div class="card-body">
             <h5 class="card-title">Agregar usuario</h5>
             <form @submit.prevent="submitted" class="needs-validation" novalidate>

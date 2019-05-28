@@ -84,7 +84,7 @@
         <div class="col-md-8">
           <h2>Construccion Moderna</h2>
           <p>
-            <i class="fab fa-facebook-f"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
             <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui magnam sit minima facilis corrupti dolores voluptas pariatur placeat nobis nesciunt! Laboriosam similique esse fuga magnam optio sunt! Excepturi, asperiores illum!
           </p>
         </div>
