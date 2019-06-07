@@ -3,7 +3,7 @@
 > prueba en Vue.js
 
 ## Ver aplicación
-[Aplicacion de Vue.js](https://ar3d-app.herokuapp.com)
+[Aplicacion de Vue.js](https://vue-app-prueba.herokuapp.com/)
 
 ## Opciones para lanzar
 
