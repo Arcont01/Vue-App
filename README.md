@@ -1,9 +1,9 @@
 # prueba-ar3d
 
-> prueba de ar3d
+> prueba en Vue.js
 
 ## Ver aplicación
-[Aplicacion-ar3d](https://ar3d-app.herokuapp.com)
+[Aplicacion de Vue.js](https://ar3d-app.herokuapp.com)
 
 ## Opciones para lanzar
 
